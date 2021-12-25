@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+body{
+    background: none;
+    scroll-behavior: smooth;
+    scroll-snap-align:unset;
+}
+
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+
+/* Color Theme Swatches in Hex */
+.fread-1-hex { color: #98A1B3; }
+.fread-2-hex { color: #CCDEFF; }
+.fread-3-hex { color: #FFF7BE; }
+.fread-4-hex { color: #A174B3; }
+.fread-5-hex { color: #EAB3FF; }
+
+/* Color Theme Swatches in RGBA */
+.fread-1-rgba { background-color: rgba(152, 161, 179, 1); }
+
+h1{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+h1 span{
+      display: block;
+      color: red;
+      text-shadow: 2px 2px gray;
+}
+
+header, footer{
+	width: 100%;
+    padding: 2rem;   
+    text-align: center;
+  
+}
+
+.red{
+    background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(236,0,0,1) 35%, rgba(110,27,1,1) 100%);
+}
+
+.bck{
+    background: rgb(63,111,251);
+    background: linear-gradient(297deg, rgba(63,111,251,1) 0%, rgba(70,252,226,1) 100%)
+}
+
+header{
+    border-bottom: dotted 1px gray;
+}
+    
+
+footer p{
+	text-align: center !important;
+	display: block;
+	
+}
+
+p{
+	padding-top: 2.0em;
+    line-height: 2.0rem;
+	text-align:justify;
+	text-justify:auto;
+}
+
+form div{
+    margin-bottom: 1.5em;
+}
+
+.form-check{
+    margin-top: 1em;
+}
+
+form button,
+#receive2{
+    margin-top: 1em;
+    padding: 1.5rem;
+    width: 100% !important;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .colm-8{
+        float: left !important;
+        width: 66.66% !important;
+    }
+
+    .colm-4{
+        float: right !important;
+        width: 33.33% !important;
+    }
+      
+}
+
+
+
+

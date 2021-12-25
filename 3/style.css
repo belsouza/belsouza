@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body, html{
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('background.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+input[type=text]{
+    border-radius:  5px;
+    border: solid 1px yellow;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type=checkbox]{
+    margin-right: 1em;
+}
+
+
+.col-6{
+    width: 60%;
+    height: 100%;
+}
+
+.col-4{ 
+    padding: 5em;   
+    width: 40%;
+    height: 100%;
+}
+
+
+form{
+    color: yellow;
+}
+
+.form-group{
+    margin-top: 1em;
+}
+
+.form-check{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+header{
+    display: flex;    
+    border-bottom: solid 3px yellow;
+}
+
+footer{
+    text-align: center;
+    border-top: solid 3px yellow;
+    color: yellow;
+    padding: 1rem;
+}
+
+header h1{
+    color: yellow;
+}
+
+button{
+    width: 100%;
+    background-color: yellow;
+    padding: 2em;
+}
+
+
+

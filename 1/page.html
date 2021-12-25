@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html itemscope itemtype="https://schema.org/QAPage">
+  <head>
+    <title>page</title>
+    <link rel="icon" type="image/png" href="monitor.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <style type="text/css">
+        *{ box-sizing: border-box; margin: 0; padding: 0; border: none; outline: none; }
+        html, body{ min-height: 100% !important; height: 100%; scroll-behavior: smooth;}
+        a{ text-decoration: none; color: black; display: block;}
+        body{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 2rem;   }       
+        header h1{ font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 500; font-size: 1.2em; }
+        header img{ position: relative; top: 10px; margin-right: 10px; }
+        header{ background-color: darkturquoise; text-align: center; padding: 2.5rem; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: center; }
+        footer{ padding: 0.8rem; background-color: deeppink; text-align: center; clear: both; }
+        main{  background-color: white; overflow: auto; }
+        .marker{ background-color: deeppink; transform: rotate(45deg); position: relative; width: 50px; height: 50px; top: 45px; right: -104.5%; }
+        p{ margin: 2.5rem 0;}
+        .color1{ content: none; width: 100%; background-color: chartreuse; height: 4px;}
+        .content{ padding: 4rem;  height: 100%;  text-align: justify;  overflow: block; }
+        .content h2{ color: darkviolet;}
+        #success{ background-color: grey; padding: 30px; text-align: center;  }
+        #success a{ color: #fff }
+        #success:hover{ box-shadow: 0 0 2em chartreuse; background-color: rgb(55, 52, 52); transform: scale(1.05, 1.05);}
+
+        #link{ display: none;}
+        .subscription{  padding: 4rem; background-color: indigo; color: white;  text-align: left; height: 100%;  }
+        .subscription p{ text-align: center; }
+        .subscription span{ display: block; margin-top: 2rem;}
+        form{ height: 100vw;}
+        form div{ margin-top: 10px;}
+        form input{ width: 100%; padding: 10px; border-radius: 2px; border: solid 1px gray; }
+        button{ margin-top: 50px; background-color: deepskyblue; padding: 20px; border: none; width: 100%; color: white; font-size: 15px;}
+        button:hover{ background-color: rgb(1, 118, 226);}
+
+
+
+        [class*="col-"] {
+            float:left;
+            padding: auto;         
+        }
+        
+        @media only screen and (min-width: 768px) {         
+            .col-4 {width: 33.33%;}          
+            .col-8 {width: 66.66%;}   
+          } 
+    
+    </style>
+  </head>
+
+  <body>
+      <header id="header">
+            <h1><span><img src="monitor.png" width="40" height="40" /></span><strong>Tropa de TI</strong></h1>            
+      </header>
+      
+      <main id="container">
+        <div class="color1">&nbsp;</div>
+        <section class="content col-8">
+            <div class="marker"></div>
+            <h2>Baixe agora o seu conteúdo especial</h2>
+            <p>Tenha agora em mãos o especial de tecnologia preparado pela equipe Tropa de TI</p>
+            <div>
+                <img src="abstract.jpg" alt="image_abstract" width="100%" height="auto" />
+            </div>
+            <p>
+                O maior desafio que o desenvolvedor encontra nos dias de hoje não é somente acompanhar as novas inovações
+                que surgem para ajudar na resoluções de problemas, mas saber como implementar essas novas soluções e preparar
+                sua empresa para um novo empreendimento. Algumas vezes estes problemas são decorrentes e todos já estão acostumados com eles.
+            </p>
+
+            <p>
+                Porém na prática, uma nova tecnologia pode resultar em uma grande dor de cabeça. Principalmente jovens que,
+                diante do surgimento de uma nova solução procura imediatamente implementá-la na empresa, sem mensurar os custos
+                operacionais de tal decisão. E, por fim, a solução "ótima" custou mais à empresa que os erros anteriores.
+            </p>
+
+            <p>
+                Esse material é para quem já trabalha com ti e está procurando se atualizar sem ter dor de cabeça com modismos. Esta é uma 
+                compilação das melhores ideias e apresenta a resposta para o dilema de suas equipes. Baixe aqui seu material gratuitamente
+                mediante um cadastro e fique por dentro de <b>como melhorar o rendimento de sua empresa!</b>
+            </p>
+
+            <div id="success"> 
+                <a id="quero" href="#form">Quero receber agora o material!!! </a>
+                <a id="link" target="_new" href="apostila.pdf">Download!!!</a>
+            </div>
+
+        </section>
+
+        <section class="subscription col-4">
+
+            <p>Preencha o formulário abaixo para receber o material por email <b>gratuitamente!</b></p>
+            <form id="form">
+
+                <div>
+                     <label>Nome*</label>
+                    <input type="text" name="nome" id="nome" required />
+                </div>
+               
+                <div>
+                    <label>Email*</label>
+                   <input type="email" name="email" id="email" required />
+               </div>
+
+               <div>
+                <label>Telefone</label>
+                <input type="text" name="telefone" id="telefone" />
+                </div>
+
+                <div>
+                    <label>Nome da empresa</label>
+                   <input type="text" name="empresa"  />
+               </div>
+
+               <span>Os campos assinalados com * são obrigatórios.</span>
+
+            <button type="submit"><b>Receber material</b></button>
+
+            </form>
+
+            
+        </section>        
+        
+      </main>
+      <footer>
+          <p>@BeeCandy Productions <br/> <a href="#container">Voltar para o topo</a></p>
+          
+      </footer>
+      <script type="text/javascript">
+
+            function scrollit(id){
+
+                $('html,body').animate({
+                    scrollTop: $("#" + id).offset().top
+                }, 'swing');
+            }
+
+
+            $(document).ready(function(e){
+
+                $("input").focusin(function(){
+                    $(this).css({ "box-shadow": "0px 0px 1.5em crimson"});
+                }).focusout(function(){
+                    $(this).css({ "box-shadow": ""});
+                });
+
+                $("#quero").on("click", function(e){
+                    e.preventDefault();
+                    scrollit("header");
+                    $("#nome").css({ "box-shadow": "0px 0px 1.5em crimson"});
+                });
+
+                //$("#success").css("display", "none");
+
+                $("#form").submit(function(e){
+
+                    e.preventDefault();
+
+                    $.ajax({
+                    type: "POST",
+                    url: "subscription.php",
+                    async: false,
+                    data: $("#form").serialize(),
+                    success: function(data){
+                        alert( data + " Seu material está pronto para download!");
+
+                        $("#success").css({"background-color": "green", "box-shadow": "0 0 2.0em chartreuse", "color":"#000" });
+                        scrollit("success");
+                        $("#quero").css({"display": "none"});
+                        $("#link").css({"display":"block", "font-weight": "800" });
+
+                        
+                    }
+
+                    }).fail(function(html){
+                        alert(html);
+                    });
+                });            
+            });
+    
+      </script>
+
+      <script>
+        const isNumericInput = (event) => {
+            const key = event.keyCode;
+            return ((key >= 48 && key <= 57) || // Allow number line
+                (key >= 96 && key <= 105) // Allow number pad
+            );
+        };
+        
+        const isModifierKey = (event) => {
+            const key = event.keyCode;
+            return (event.shiftKey === true || key === 35 || key === 36) || // Allow Shift, Home, End
+                (key === 8 || key === 9 || key === 13 || key === 46) || // Allow Backspace, Tab, Enter, Delete
+                (key > 36 && key < 41) || // Allow left, up, right, down
+                (
+                    // Allow Ctrl/Command + A,C,V,X,Z
+                    (event.ctrlKey === true || event.metaKey === true) &&
+                    (key === 65 || key === 67 || key === 86 || key === 88 || key === 90)
+                )
+        };
+        
+        const enforceFormat = (event) => {
+            // Input must be of a valid number format or a modifier key, and not longer than ten digits
+            if(!isNumericInput(event) && !isModifierKey(event)){
+                event.preventDefault();
+            }
+        };
+        
+        const formatToPhone = (event) => {
+            if(isModifierKey(event)) {return;}
+        
+           
+            const target = event.target;
+            const input = event.target.value.replace(/\D/g,'').substring(0,11); // First ten digits of input only
+            const zip = input.substring(0,2);
+            const middle = input.substring(2,7);
+            const last = input.substring(7,11);
+        
+            if(input.length > 7){target.value = `(${zip}) ${middle} - ${last}`;}
+            else if(input.length > 2){target.value = `(${zip}) ${middle}`;}
+            else if(input.length > 0){target.value = `(${zip}`;}
+        };
+        
+        const inputElement = document.getElementById('telefone');
+        inputElement.addEventListener('keydown',enforceFormat);
+        inputElement.addEventListener('keyup',formatToPhone);
+      </script>
+      
+  </body>
+</html>
